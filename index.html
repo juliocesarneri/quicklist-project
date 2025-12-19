@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+
+        <div id="app-logo">
+            <img src="assets/icons/logo.svg" alt="Logotipo do site">
+        </div>
+        
+
+            <header class="page-header">
+
+                <a href="#" class="back"> ← Voltar </a>
+                <h1>Compras da semana</h1>
+
+            </header>
+
+            <form>
+                <input type="text" name="addItem" id="addItem">
+                <button type="submit" id="btnSubmit">Adicionar item</button>
+            </form>
+
+            <ul id="lists">
+            </ul>
+
+            <div class="toast hidden">
+                <img src="assets/icons/alertremoved.svg"/>
+                <span>O item foi removido da lista</span>
+                <button class="close-toast">✕</button>
+            </div>
+        </main>
+
+        <script src="scripts.js"></script>
+</body>
+</html>
